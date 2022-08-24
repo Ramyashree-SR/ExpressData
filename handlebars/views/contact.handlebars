@@ -1,0 +1,12 @@
+<h1 style="color:blue">Contact us</h1>
+
+<h1 class="contactus">Users are:</h1>
+{{#each username}}
+<li>{{this}}</li>
+{{/each}}
+
+{{#if isAdmin}}
+<h2 class="contactus">I am an admin</h2>
+{{else}}
+<h2 class="contactus">I am not an admin</h2>
+{{/if}}
